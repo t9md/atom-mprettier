@@ -1,5 +1,6 @@
 # mprettier
 
+
 Minimal prettier
 
 - Always invoked manually, no format-on-save feature, no linter integration.
@@ -7,6 +8,8 @@ Minimal prettier
 - You need configure prettier options directly in your `config.cson`, no fancy setting UI
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
+
+![img](https://raw.githubusercontent.com/t9md/t9md/766b1a0f7c6d3bad8b03b8f49eb0d1080d466da4/img/mprettier.jpg)
 
 ## How to use?
 
