@@ -1,7 +1,6 @@
 # mprettier
 
-
-Minimal prettier
+**M**inimum / **M**inimalistic / **M**anual prettier for AtomEditor
 
 - Always invoked manually, no format-on-save feature, no linter integration.
 - No overhead on Atom startup since this package is activated when you invoked `mprettier:format` command.
