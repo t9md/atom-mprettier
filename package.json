@@ -1,7 +1,7 @@
 {
   "name": "mprettier",
   "main": "./lib/main",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Minimal prettier, always invoked manually, no linter integration, no Atom startup overhead",
   "license": "MIT",
   "private": true,
