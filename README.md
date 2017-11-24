@@ -1,6 +1,6 @@
 # mprettier
 
-Minimal prettier, why?
+Minimal prettier
 
 - Always invoked manually, no format-on-save feature, no linter integration.
 - No overhead on Atom startup since this package is activated when you invoked `mprettier:format` command.
@@ -13,6 +13,8 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
 
 ## Config example
+
+[available options](https://prettier.io/docs/en/options.html)
 
 `config.cson`
 
@@ -30,7 +32,7 @@ Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
 
 - [ ] determine accurate parser to user from grammar
 - [ ] ignore file, scope?
-- [ ] detect user config by `prettier.resolveConfig`
+- [x] detect user config by `prettier.resolveConfig`
 - [ ] make prettier path configurable? flexibility which global/local prettier to use
 
 ## Thanks
