@@ -34,6 +34,7 @@ Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
 - [ ] ignore file, scope?
 - [x] detect user's prettier config by `prettier.resolveConfig`
 - [ ] make prettier path configurable? flexibility which global/local prettier to use
+- [ ] support embedded code block
 
 ## Thanks
 
