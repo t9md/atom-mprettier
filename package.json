@@ -1,7 +1,7 @@
 {
   "name": "mprettier",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Minimal prettier, always invoked manually, no linter integration, no Atom startup overhead",
   "license": "MIT",
   "private": true,
@@ -44,13 +44,19 @@
       "order": 6,
       "type": "string",
       "default": "babylon",
-      "enum": ["babylon", "flow"]
+      "enum": [
+        "babylon",
+        "flow"
+      ]
     },
     "notificationMethodOnPrettierError": {
       "order": 7,
       "type": "string",
       "default": "atom-notification",
-      "enum": ["atom-notification", "console"]
+      "enum": [
+        "atom-notification",
+        "console"
+      ]
     },
     "debug": {
       "order": 8,
@@ -59,7 +65,9 @@
     }
   },
   "activationCommands": {
-    "atom-workspace": ["mprettier:format"]
+    "atom-workspace": [
+      "mprettier:format"
+    ]
   },
   "dependencies": {
     "fs-plus": "^3.0.1",
