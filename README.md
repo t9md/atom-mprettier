@@ -8,13 +8,6 @@ Minimal prettier, why?
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
 
-## Thanks
-
-Thanks for creating super great library and tools, this package greatly owning to following projects.
-
-- [prettier](https://github.com/prettier/prettier)
-- [prettier-atom](https://atom.io/packages/prettier-atom)
-
 ## How to use?
 
 Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
@@ -39,4 +32,10 @@ Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
 - [ ] ignore file, scope?
 - [ ] detect user config by `prettier.resolveConfig`
 - [ ] make prettier path configurable? flexibility which global/local prettier to use
-# atom-mprettier
+
+## Thanks
+
+Thanks for creating super great library and tools, this package greatly owning to following projects.
+
+- [prettier](https://github.com/prettier/prettier)
+- [prettier-atom](https://atom.io/packages/prettier-atom)
