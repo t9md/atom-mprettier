@@ -8,11 +8,14 @@
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
 
-![img](https://raw.githubusercontent.com/t9md/t9md/766b1a0f7c6d3bad8b03b8f49eb0d1080d466da4/img/mprettier.jpg)
+![img](https://raw.githubusercontent.com/t9md/t9md/c32e34f30998f8840671d1a7ad43074136ba4b02/img/mprettier.png)
 
 ## How to use?
 
-Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
+- Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
+- If you have trouble execute `mprettier:clip-debug-info`.
+  - This command clipt debug info into clipboard
+  - Paste it to buffer then observe it by yourself before opening issue.
 
 ## Config example
 
@@ -32,11 +35,12 @@ Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
 
 ## TODO
 
-- [ ] determine accurate parser to user from grammar
+- [x] determine accurate parser to user from grammar
 - [ ] ignore file, scope?
 - [x] detect user's prettier config by `prettier.resolveConfig`
-- [ ] make prettier path configurable? flexibility which global/local prettier to use
+- [x] make prettier path configurable? flexibility which global/local prettier to use
 - [ ] support embedded code block
+- [ ] format on save **once manually invoked and pkg activated** ?
 
 ## Thanks
 

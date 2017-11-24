@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "Minimal prettier, always invoked manually, no linter integration, no Atom startup overhead",
   "license": "MIT",
-  "private": true, "repository": "https://github.com/t9md/atom-mprettier",
+  "private": true,
+  "repository": "https://github.com/t9md/atom-mprettier",
   "engines": {
     "atom": "^1.15.0"
   },
@@ -19,30 +20,40 @@
       "type": "boolean",
       "default": true
     },
-    "usePrettierGloballyInstalled": {
+    "usePrettierInAbsolutePath": {
       "order": 2,
       "type": "boolean",
-      "default": true
+      "default": false
+    },
+    "prettierInAbsolutePath": {
+      "order": 3,
+      "type": "string",
+      "default": "/usr/local/lib/node_modules/prettier/index.js"
+    },
+    "usePrettierGloballyInstalled": {
+      "order": 4,
+      "type": "boolean",
+      "default": false
     },
     "usePrettierBundled": {
-      "order": 3,
+      "order": 5,
       "type": "boolean",
       "default": true
     },
     "javascriptParser": {
-      "order": 4,
+      "order": 6,
       "type": "string",
       "default": "babylon",
       "enum": ["babylon", "flow"]
     },
     "notificationMethodOnPrettierError": {
-      "order": 5,
+      "order": 7,
       "type": "string",
       "default": "atom-notification",
       "enum": ["atom-notification", "console"]
     },
     "debug": {
-      "order": 6,
+      "order": 8,
       "type": "boolean",
       "default": false
     }
