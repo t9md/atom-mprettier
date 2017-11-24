@@ -4,7 +4,7 @@
 
 - Always invoked manually, no format-on-save feature, no linter integration.
 - No overhead on Atom startup since this package is activated when you invoked `mprettier:format` command.
-- You need configure prettier options directly in your `config.cson`, no fancy setting UI
+- You need configure prettier options directly in your `config.cson`, no fancy setting UI.
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
 
