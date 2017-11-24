@@ -1,0 +1,15 @@
+{
+  "name": "mprettier",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Minimal prettier, always invoked manually, no linter integration, no Atom startup overhead",
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/t9md/atom-mprettier",
+  "engines": {
+    "atom": "^1.15.0"
+  },
+  "activationCommands": {
+    "atom-workspace": ["mprettier:format"]
+  }
+}
