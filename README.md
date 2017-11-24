@@ -6,7 +6,14 @@ Minimal prettier, why?
 - No overhead on Atom startup since this package is activated when you invoked `mprettier:format` command.
 - You need configure prettier options directly in your `config.cson`, no fancy setting UI
 
-If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically BETTER than this package.
+If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
+
+## Thanks
+
+Thanks for creating super great library and tools, this package greatly owning to following projects.
+
+- [prettier](https://github.com/prettier/prettier)
+- [prettier-atom](https://atom.io/packages/prettier-atom)
 
 ## How to use?
 
