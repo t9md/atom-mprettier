@@ -8,7 +8,7 @@
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
 
-![img](https://raw.githubusercontent.com/t9md/t9md/c32e34f30998f8840671d1a7ad43074136ba4b02/img/mprettier.png)
+![img](https://raw.githubusercontent.com/t9md/t9md/e78ffc752ee2d8534a0584bc55454394476b8fc5/img/mprettier.png)
 
 ## How to use?
 
