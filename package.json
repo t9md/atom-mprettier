@@ -10,7 +10,7 @@
     "atom": "^1.15.0"
   },
   "configSchema": {
-    "usePrettierInCurrentFileDir": {
+    "usePrettierInCurrentFileDirectory": {
       "order": 0,
       "type": "boolean",
       "default": true
