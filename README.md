@@ -3,7 +3,7 @@
 **M**inimum / **M**inimalistic / **M**anual prettier for AtomEditor
 
 - Always invoked manually, no format-on-save feature, no linter integration.
-- No overhead on Atom startup since this package is activated when you invoked `mprettier:format` command.
+- No(or less?) overhead on Atom startup.
 - You need configure prettier options directly in your `config.cson`, no fancy setting UI.
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
@@ -40,7 +40,7 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 - [x] detect user's prettier config by `prettier.resolveConfig`
 - [x] make prettier path configurable? flexibility which global/local prettier to use
 - [ ] support embedded code block
-- [ ] format on save **once manually invoked and pkg activated** ?
+- [x] format on save
 
 ## Thanks
 
