@@ -1,9 +1,9 @@
 # mprettier
 
-**M**inimum / **M**inimalistic / **M**anual prettier for AtomEditor
+**M**inimalistic prettier for AtomEditor
 
-- Always invoked manually, no format-on-save feature, no linter integration.
-- No(or less?) overhead on Atom startup.
+- Super small overhead on Atom startup
+  - But no linter integration
 - You need configure prettier options directly in your `config.cson`, no fancy setting UI.
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
@@ -13,7 +13,7 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 ## How to use?
 
 - Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
-- If you have trouble execute `mprettier:clip-debug-info`.
+- If you have trouble, execute `mprettier:clip-debug-info`.
   - This command clip debug info into clipboard
   - Paste it to buffer then observe it by yourself before opening issue.
 

@@ -2,7 +2,7 @@
   "name": "mprettier",
   "main": "./lib/main",
   "version": "0.3.0",
-  "description": "Minimal prettier, always invoked manually, no linter integration, no Atom startup overhead",
+  "description": "Minimal prettier with less Atom startup overhead",
   "license": "MIT",
   "private": true,
   "repository": "https://github.com/t9md/atom-mprettier",
