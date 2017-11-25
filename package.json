@@ -1,7 +1,7 @@
 {
   "name": "mprettier",
   "main": "./lib/main",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Minimal prettier, always invoked manually, no linter integration, no Atom startup overhead",
   "license": "MIT",
   "private": true,
@@ -45,7 +45,10 @@
       "order": 6,
       "type": "string",
       "default": "babylon",
-      "enum": ["babylon", "flow"]
+      "enum": [
+        "babylon",
+        "flow"
+      ]
     },
     "scopesForParser": {
       "type": "object",
@@ -73,7 +76,11 @@
           "order": 1,
           "title": "typescript",
           "type": "array",
-          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
+          "default": [
+            "source.ts",
+            "source.tsx",
+            "source.ts.tsx"
+          ],
           "items": {
             "type": "string"
           }
@@ -98,7 +105,9 @@
           "order": 3,
           "title": "json",
           "type": "array",
-          "default": ["source.json"],
+          "default": [
+            "source.json"
+          ],
           "items": {
             "type": "string"
           }
@@ -107,7 +116,9 @@
           "order": 4,
           "title": "graphql",
           "type": "array",
-          "default": ["source.graphql"],
+          "default": [
+            "source.graphql"
+          ],
           "items": {
             "type": "string"
           }
@@ -116,7 +127,10 @@
           "order": 5,
           "title": "markdown",
           "type": "array",
-          "default": ["source.gfm", "text.md"],
+          "default": [
+            "source.gfm",
+            "text.md"
+          ],
           "items": {
             "type": "string"
           }
@@ -127,7 +141,10 @@
       "order": 7,
       "type": "string",
       "default": "atom-notification",
-      "enum": ["atom-notification", "console"]
+      "enum": [
+        "atom-notification",
+        "console"
+      ]
     },
     "debug": {
       "order": 8,
@@ -136,7 +153,9 @@
     }
   },
   "activationCommands": {
-    "atom-workspace": ["mprettier:format"]
+    "atom-workspace": [
+      "mprettier:format"
+    ]
   },
   "dependencies": {
     "fs-plus": "^3.0.1",
