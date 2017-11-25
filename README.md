@@ -37,6 +37,7 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 
 - [x] determine parser to use from language grammar
 - [ ] ignore file, scope?
+- [x] ignore parser formatOnSave only and both formatOnSave + manual execution respectively
 - [x] detect user's prettier config by `prettier.resolveConfig`
 - [x] make prettier path configurable? flexibility which global/local prettier to use
 - [ ] support embedded code block
