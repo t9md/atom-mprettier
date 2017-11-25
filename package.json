@@ -46,6 +46,80 @@
       "default": "babylon",
       "enum": ["babylon", "flow"]
     },
+    "scopesForParser": {
+      "type": "object",
+      "collapsed": false,
+      "properties": {
+        "javascript": {
+          "order": 0,
+          "title": "JavaScript",
+          "type": "array",
+          "default": [
+            "source.js",
+            "source.jsx",
+            "source.js.jsx",
+            "source.babel",
+            "source.js-semantic",
+            "text.html.basic",
+            "text.html.vue"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "typescript": {
+          "order": 1,
+          "title": "TypeScript",
+          "type": "array",
+          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "postcss": {
+          "order": 2,
+          "title": "PostCSS",
+          "type": "array",
+          "default": [
+            "source.css",
+            "source.less",
+            "source.css.less",
+            "source.scss",
+            "source.css.scss",
+            "source.css.postcss"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "json": {
+          "order": 3,
+          "title": "JSON",
+          "type": "array",
+          "default": ["source.json"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "graphql": {
+          "order": 4,
+          "title": "GraphQL",
+          "type": "array",
+          "default": ["source.graphql"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "markdown": {
+          "order": 5,
+          "type": "array",
+          "default": ["source.gfm", "text.md"],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "notificationMethodOnPrettierError": {
       "order": 7,
       "type": "string",
