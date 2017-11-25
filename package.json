@@ -152,11 +152,6 @@
       "default": false
     }
   },
-  "activationCommands": {
-    "atom-workspace": [
-      "mprettier:format"
-    ]
-  },
   "dependencies": {
     "fs-plus": "^3.0.1",
     "prettier": "^1.8.2"
