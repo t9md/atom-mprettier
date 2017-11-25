@@ -40,7 +40,7 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 - [x] detect user's prettier config by `prettier.resolveConfig`
 - [x] make prettier path configurable? flexibility which global/local prettier to use
 - [ ] support embedded code block
-- [ ] format on save **once manually invoked and pkg activated** ?
+- [x] format on save
 
 ## Thanks
 

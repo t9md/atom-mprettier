@@ -10,45 +10,48 @@
     "atom": "^1.15.0"
   },
   "configSchema": {
-    "usePrettierInCurrentFileDirectory": {
+    "formatOnSave": {
       "order": 0,
+      "description": "works only for **active** editor",
       "type": "boolean",
-      "default": true
+      "default": false
     },
-    "usePrettierInCurrentProject": {
+    "usePrettierInCurrentFileDirectory": {
       "order": 1,
       "type": "boolean",
       "default": true
     },
-    "usePrettierInAbsolutePath": {
+    "usePrettierInCurrentProject": {
       "order": 2,
+      "type": "boolean",
+      "default": true
+    },
+    "usePrettierInAbsolutePath": {
+      "order": 3,
       "type": "boolean",
       "default": false
     },
     "prettierInAbsolutePath": {
-      "order": 3,
+      "order": 4,
       "type": "string",
       "default": "/usr/local/lib/node_modules/prettier/index.js"
     },
     "usePrettierGloballyInstalled": {
-      "order": 4,
+      "order": 5,
       "type": "boolean",
       "default": false
     },
     "usePrettierBundled": {
-      "order": 5,
+      "order": 6,
       "type": "boolean",
       "default": true
     },
     "javascriptParser": {
       "title": "JavaScript Parser",
-      "order": 6,
+      "order": 7,
       "type": "string",
       "default": "babylon",
-      "enum": [
-        "babylon",
-        "flow"
-      ]
+      "enum": ["babylon", "flow"]
     },
     "scopesForParser": {
       "type": "object",
@@ -76,11 +79,7 @@
           "order": 1,
           "title": "typescript",
           "type": "array",
-          "default": [
-            "source.ts",
-            "source.tsx",
-            "source.ts.tsx"
-          ],
+          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
           "items": {
             "type": "string"
           }
@@ -105,9 +104,7 @@
           "order": 3,
           "title": "json",
           "type": "array",
-          "default": [
-            "source.json"
-          ],
+          "default": ["source.json"],
           "items": {
             "type": "string"
           }
@@ -116,9 +113,7 @@
           "order": 4,
           "title": "graphql",
           "type": "array",
-          "default": [
-            "source.graphql"
-          ],
+          "default": ["source.graphql"],
           "items": {
             "type": "string"
           }
@@ -127,10 +122,7 @@
           "order": 5,
           "title": "markdown",
           "type": "array",
-          "default": [
-            "source.gfm",
-            "text.md"
-          ],
+          "default": ["source.gfm", "text.md"],
           "items": {
             "type": "string"
           }
@@ -138,16 +130,13 @@
       }
     },
     "notificationMethodOnPrettierError": {
-      "order": 7,
+      "order": 8,
       "type": "string",
       "default": "atom-notification",
-      "enum": [
-        "atom-notification",
-        "console"
-      ]
+      "enum": ["atom-notification", "console"]
     },
     "debug": {
-      "order": 8,
+      "order": 9,
       "type": "boolean",
       "default": false
     }
