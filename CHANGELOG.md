@@ -1,3 +1,8 @@
+# 0.4.0:
+- New: now can disable specific parser by configuration.
+  - `disabledParsersOnFormatOnSave` is checked on `formatOnSave` case only.
+  - `disabledParsers` is checked in both manual and `formatOnSave` case.
+
 # 0.3.0:
 - New: `formatOnSave`, works on **active** text editor only.
 
