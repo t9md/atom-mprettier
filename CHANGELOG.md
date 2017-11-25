@@ -1,3 +1,8 @@
+# 0.1.3:
+- New: `scopesForParser` config, which allows user to specify which parser to use by scopes. #1
+  - Now language grammar scopes information is defined for following parser.
+  - `javascript`,`typescript`,`postcss`,`json`,`graphql`,`markdown`,
+
 # 0.1.2:
 - Rename config param
   - old: `usePrettierInCurrentFileDir`

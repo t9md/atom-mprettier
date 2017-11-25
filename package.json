@@ -41,6 +41,7 @@
       "default": true
     },
     "javascriptParser": {
+      "title": "JavaScript Parser",
       "order": 6,
       "type": "string",
       "default": "babylon",
@@ -52,7 +53,8 @@
       "properties": {
         "javascript": {
           "order": 0,
-          "title": "JavaScript",
+          "title": "javascript",
+          "description": "Parser you chose in `JavaScript Parser` is used",
           "type": "array",
           "default": [
             "source.js",
@@ -69,7 +71,7 @@
         },
         "typescript": {
           "order": 1,
-          "title": "TypeScript",
+          "title": "typescript",
           "type": "array",
           "default": ["source.ts", "source.tsx", "source.ts.tsx"],
           "items": {
@@ -78,7 +80,7 @@
         },
         "postcss": {
           "order": 2,
-          "title": "PostCSS",
+          "title": "postcss",
           "type": "array",
           "default": [
             "source.css",
@@ -94,7 +96,7 @@
         },
         "json": {
           "order": 3,
-          "title": "JSON",
+          "title": "json",
           "type": "array",
           "default": ["source.json"],
           "items": {
@@ -103,7 +105,7 @@
         },
         "graphql": {
           "order": 4,
-          "title": "GraphQL",
+          "title": "graphql",
           "type": "array",
           "default": ["source.graphql"],
           "items": {
@@ -112,6 +114,7 @@
         },
         "markdown": {
           "order": 5,
+          "title": "markdown",
           "type": "array",
           "default": ["source.gfm", "text.md"],
           "items": {
