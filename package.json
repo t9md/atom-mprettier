@@ -1,7 +1,7 @@
 {
   "name": "mprettier",
   "main": "./lib/main",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Minimal prettier with less Atom startup overhead",
   "license": "MIT",
   "private": true,
@@ -69,7 +69,10 @@
       "order": 9,
       "type": "string",
       "default": "babylon",
-      "enum": ["babylon", "flow"]
+      "enum": [
+        "babylon",
+        "flow"
+      ]
     },
     "scopesForParser": {
       "type": "object",
@@ -97,7 +100,11 @@
           "order": 1,
           "title": "typescript",
           "type": "array",
-          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
+          "default": [
+            "source.ts",
+            "source.tsx",
+            "source.ts.tsx"
+          ],
           "items": {
             "type": "string"
           }
@@ -122,7 +129,9 @@
           "order": 3,
           "title": "json",
           "type": "array",
-          "default": ["source.json"],
+          "default": [
+            "source.json"
+          ],
           "items": {
             "type": "string"
           }
@@ -131,7 +140,9 @@
           "order": 4,
           "title": "graphql",
           "type": "array",
-          "default": ["source.graphql"],
+          "default": [
+            "source.graphql"
+          ],
           "items": {
             "type": "string"
           }
@@ -140,7 +151,10 @@
           "order": 5,
           "title": "markdown",
           "type": "array",
-          "default": ["source.gfm", "text.md"],
+          "default": [
+            "source.gfm",
+            "text.md"
+          ],
           "items": {
             "type": "string"
           }
@@ -151,7 +165,10 @@
       "order": 10,
       "type": "string",
       "default": "atom-notification",
-      "enum": ["atom-notification", "console"]
+      "enum": [
+        "atom-notification",
+        "console"
+      ]
     },
     "debug": {
       "order": 11,
