@@ -14,12 +14,12 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 
 - Invoke `mprettier:format`(`ctrl-alt-f`) on text editor.
 - If you have trouble execute `mprettier:clip-debug-info`.
-  - This command clipt debug info into clipboard
+  - This command clip debug info into clipboard
   - Paste it to buffer then observe it by yourself before opening issue.
 
 ## Config example
 
-[available options](https://prettier.io/docs/en/options.html)
+- For [prettierOptions](https://prettier.io/docs/en/options.html), you need to edit `config.cson` manually.
 
 `config.cson`
 
@@ -35,7 +35,7 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 
 ## TODO
 
-- [x] determine accurate parser to user from grammar
+- [x] determine parser to use from language grammar
 - [ ] ignore file, scope?
 - [x] detect user's prettier config by `prettier.resolveConfig`
 - [x] make prettier path configurable? flexibility which global/local prettier to use
@@ -44,7 +44,7 @@ If this package is not for you, use [prettier-atom](https://atom.io/packages/pre
 
 ## Thanks
 
-Thanks for creating super great library and tools, this package greatly owning to following projects.
+Thanks for creating super great library and tools, this package is greatly owning to following projects.
 
 - [prettier](https://github.com/prettier/prettier)
 - [prettier-atom](https://atom.io/packages/prettier-atom)
