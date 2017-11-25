@@ -1,3 +1,7 @@
+# 0.5.0: WIP
+- New, Experimental: `toggle-disable-file` to temporally disable/enable current editor's filePath.
+  - Affect both formatOnSave and manualFormat.
+
 # 0.4.0:
 - New: now can disable specific parser by configuration.
   - `disabledParsersOnFormatOnSave` is checked on `formatOnSave` case only.
