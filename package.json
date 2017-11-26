@@ -46,8 +46,13 @@
       "type": "boolean",
       "default": true
     },
-    "disabledParsers": {
+    "formatOnlyWhenPrettierIsProjectDependencies": {
       "order": 7,
+      "type": "boolean",
+      "default": false
+    },
+    "disabledParsers": {
+      "order": 8,
       "description": "Put parser names here e.g. `markdown, postcss`",
       "type": "array",
       "default": [],
@@ -56,7 +61,7 @@
       }
     },
     "disabledParsersOnFormatOnSave": {
-      "order": 8,
+      "order": 9,
       "description": "Checked only when formatOnSave before checking `disabledParsers`",
       "type": "array",
       "default": [],
@@ -66,13 +71,10 @@
     },
     "javascriptParser": {
       "title": "JavaScript Parser",
-      "order": 9,
+      "order": 10,
       "type": "string",
       "default": "babylon",
-      "enum": [
-        "babylon",
-        "flow"
-      ]
+      "enum": ["babylon", "flow"]
     },
     "scopesForParser": {
       "type": "object",
@@ -100,11 +102,7 @@
           "order": 1,
           "title": "typescript",
           "type": "array",
-          "default": [
-            "source.ts",
-            "source.tsx",
-            "source.ts.tsx"
-          ],
+          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
           "items": {
             "type": "string"
           }
@@ -129,9 +127,7 @@
           "order": 3,
           "title": "json",
           "type": "array",
-          "default": [
-            "source.json"
-          ],
+          "default": ["source.json"],
           "items": {
             "type": "string"
           }
@@ -140,9 +136,7 @@
           "order": 4,
           "title": "graphql",
           "type": "array",
-          "default": [
-            "source.graphql"
-          ],
+          "default": ["source.graphql"],
           "items": {
             "type": "string"
           }
@@ -151,10 +145,7 @@
           "order": 5,
           "title": "markdown",
           "type": "array",
-          "default": [
-            "source.gfm",
-            "text.md"
-          ],
+          "default": ["source.gfm", "text.md"],
           "items": {
             "type": "string"
           }
@@ -162,22 +153,20 @@
       }
     },
     "notificationMethodOnPrettierError": {
-      "order": 10,
+      "order": 11,
       "type": "string",
       "default": "atom-notification",
-      "enum": [
-        "atom-notification",
-        "console"
-      ]
+      "enum": ["atom-notification", "console"]
     },
     "debug": {
-      "order": 11,
+      "order": 12,
       "type": "boolean",
       "default": false
     }
   },
   "dependencies": {
     "fs-plus": "^3.0.1",
-    "prettier": "^1.8.2"
+    "prettier": "^1.8.2",
+    "read-pkg-up": "^3.0.0"
   }
 }
