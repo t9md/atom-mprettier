@@ -1,7 +1,7 @@
 {
   "name": "mprettier",
   "main": "./lib/main",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Minimalistic prettier runner for more performant Atom startup",
   "license": "MIT",
   "private": true,
