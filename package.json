@@ -14,10 +14,7 @@
       "order": 0,
       "type": "string",
       "default": "atom-notification",
-      "enum": [
-        "atom-notification",
-        "console"
-      ]
+      "enum": ["atom-notification", "console"]
     },
     "debug": {
       "order": 1,
@@ -113,10 +110,7 @@
           "order": 0,
           "type": "string",
           "default": "babylon",
-          "enum": [
-            "babylon",
-            "flow"
-          ]
+          "enum": ["babylon", "flow"]
         },
         "javascript": {
           "order": 1,
@@ -140,11 +134,7 @@
           "order": 2,
           "title": "typescript",
           "type": "array",
-          "default": [
-            "source.ts",
-            "source.tsx",
-            "source.ts.tsx"
-          ],
+          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
           "items": {
             "type": "string"
           }
@@ -169,9 +159,7 @@
           "order": 4,
           "title": "json",
           "type": "array",
-          "default": [
-            "source.json"
-          ],
+          "default": ["source.json"],
           "items": {
             "type": "string"
           }
@@ -180,9 +168,7 @@
           "order": 5,
           "title": "graphql",
           "type": "array",
-          "default": [
-            "source.graphql"
-          ],
+          "default": ["source.graphql"],
           "items": {
             "type": "string"
           }
@@ -191,10 +177,7 @@
           "order": 6,
           "title": "markdown",
           "type": "array",
-          "default": [
-            "source.gfm",
-            "text.md"
-          ],
+          "default": ["source.gfm", "text.md"],
           "items": {
             "type": "string"
           }
