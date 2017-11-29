@@ -15,19 +15,13 @@
       "order": 1,
       "type": "string",
       "default": "babylon",
-      "enum": [
-        "babylon",
-        "flow"
-      ]
+      "enum": ["babylon", "flow"]
     },
     "notificationMethodOnPrettierError": {
       "order": 2,
       "type": "string",
       "default": "atom-notification",
-      "enum": [
-        "atom-notification",
-        "console"
-      ]
+      "enum": ["atom-notification", "console"]
     },
     "debug": {
       "order": 3,
@@ -37,7 +31,7 @@
     "formatOnSave": {
       "order": 4,
       "type": "object",
-      "collapsed": true,
+      "collapsed": false,
       "properties": {
         "enable": {
           "title": "Enable",
@@ -73,7 +67,7 @@
     "prettierToUseInOrder": {
       "order": 5,
       "type": "object",
-      "collapsed": true,
+      "collapsed": false,
       "properties": {
         "inCurrentFileDirectory": {
           "title": "1. In Current File Directory",
@@ -116,7 +110,7 @@
     "scopesForParser": {
       "order": 6,
       "type": "object",
-      "collapsed": true,
+      "collapsed": false,
       "properties": {
         "javascript": {
           "order": 0,
@@ -140,11 +134,7 @@
           "order": 1,
           "title": "typescript",
           "type": "array",
-          "default": [
-            "source.ts",
-            "source.tsx",
-            "source.ts.tsx"
-          ],
+          "default": ["source.ts", "source.tsx", "source.ts.tsx"],
           "items": {
             "type": "string"
           }
@@ -169,9 +159,7 @@
           "order": 3,
           "title": "json",
           "type": "array",
-          "default": [
-            "source.json"
-          ],
+          "default": ["source.json"],
           "items": {
             "type": "string"
           }
@@ -180,9 +168,7 @@
           "order": 4,
           "title": "graphql",
           "type": "array",
-          "default": [
-            "source.graphql"
-          ],
+          "default": ["source.graphql"],
           "items": {
             "type": "string"
           }
@@ -191,10 +177,7 @@
           "order": 5,
           "title": "markdown",
           "type": "array",
-          "default": [
-            "source.gfm",
-            "text.md"
-          ],
+          "default": ["source.gfm", "text.md"],
           "items": {
             "type": "string"
           }

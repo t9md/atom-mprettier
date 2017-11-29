@@ -1,4 +1,7 @@
-# 0.5.0: WIP
+# 0.5.1:
+- Minor change: Make collapsed config options default uncollapsed.
+
+# 0.5.0:
 - New, Experimental: `toggle-disable-file` to temporally disable/enable current editor's filePath on `formatOnSave`.
 - Breaking: Rethink configuration parameters name, how to be organized
   - Now manual format is always executed as long as prettier found, so exclusion option is for `formatOnSave` only.
