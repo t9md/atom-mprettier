@@ -10,18 +10,8 @@
     "atom": "^1.15.0"
   },
   "configSchema": {
-    "javascriptParser": {
-      "title": "JavaScript Parser",
-      "order": 1,
-      "type": "string",
-      "default": "babylon",
-      "enum": [
-        "babylon",
-        "flow"
-      ]
-    },
     "notificationMethodOnPrettierError": {
-      "order": 2,
+      "order": 0,
       "type": "string",
       "default": "atom-notification",
       "enum": [
@@ -30,37 +20,37 @@
       ]
     },
     "debug": {
-      "order": 3,
+      "order": 1,
       "type": "boolean",
       "default": false
     },
     "formatOnSave": {
-      "order": 4,
+      "order": 2,
       "type": "object",
       "collapsed": false,
       "properties": {
         "enable": {
           "title": "Enable",
-          "order": 1,
+          "order": 0,
           "description": "works only for **active** editor",
           "type": "boolean",
           "default": false
         },
         "skipWhenPrettierIsNotProjectDependencies": {
           "title": "Skip When Prettier Is Not Project Dependencies",
-          "order": 2,
+          "order": 1,
           "type": "boolean",
           "default": false
         },
         "skipWhenPrettierConfigIsNotFound": {
           "title": "Skip When Prettier Config Is Not Found",
-          "order": 3,
+          "order": 2,
           "type": "boolean",
           "default": false
         },
         "disabledParsers": {
           "title": "Disabled Parsers",
-          "order": 4,
+          "order": 3,
           "description": "Put parser names here e.g. `markdown, postcss`",
           "type": "array",
           "default": [],
@@ -71,55 +61,65 @@
       }
     },
     "prettierToUseInOrder": {
-      "order": 5,
+      "order": 3,
       "type": "object",
       "collapsed": false,
       "properties": {
         "inCurrentFileDirectory": {
           "title": "1. In Current File Directory",
-          "order": 1,
+          "order": 0,
           "type": "boolean",
           "default": false
         },
         "inCurrentProject": {
           "title": "2. In Current Project",
-          "order": 2,
+          "order": 1,
           "type": "boolean",
           "default": true
         },
         "inAbsolutePath": {
           "title": "3. In Absolute Path",
-          "order": 3,
+          "order": 2,
           "type": "boolean",
           "default": false
         },
         "prettierPath": {
           "title": "Prettier Path",
-          "order": 4,
+          "order": 3,
           "type": "string",
           "default": "/usr/local/lib/node_modules/prettier/index.js"
         },
         "globallyInstalled": {
           "title": "4. Globally Installed",
-          "order": 5,
+          "order": 4,
           "type": "boolean",
           "default": false
         },
         "bundled": {
           "title": "5. Bundled in mprettier",
-          "order": 6,
+          "order": 5,
           "type": "boolean",
           "default": true
         }
       }
     },
     "scopesForParser": {
-      "order": 6,
+      "order": 4,
       "type": "object",
       "collapsed": false,
       "properties": {
-        "javascript": {
+        "javascriptParser": {
+          "title": "JavaScript Parser",
           "order": 0,
+          "type": "string",
+          "default": "babylon",
+          "enum": [
+            "babylon",
+            "flow"
+          ]
+        },
+        "javascript": {
+          "order": 1,
           "title": "javascript",
           "description": "Parser you chose in `JavaScript Parser` is used",
           "type": "array",
@@ -137,7 +137,7 @@
           }
         },
         "typescript": {
-          "order": 1,
+          "order": 2,
           "title": "typescript",
           "type": "array",
           "default": [
@@ -150,7 +150,7 @@
           }
         },
         "postcss": {
-          "order": 2,
+          "order": 3,
           "title": "postcss",
           "type": "array",
           "default": [
@@ -166,7 +166,7 @@
           }
         },
         "json": {
-          "order": 3,
+          "order": 4,
           "title": "json",
           "type": "array",
           "default": [
@@ -177,7 +177,7 @@
           }
         },
         "graphql": {
-          "order": 4,
+          "order": 5,
           "title": "graphql",
           "type": "array",
           "default": [
@@ -188,7 +188,7 @@
           }
         },
         "markdown": {
-          "order": 5,
+          "order": 6,
           "title": "markdown",
           "type": "array",
           "default": [
