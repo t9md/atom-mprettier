@@ -40,15 +40,21 @@
           "type": "boolean",
           "default": false
         },
-        "onlyWhenPrettierIsProjectDependencies": {
-          "title": "Only When Prettier Is Project Dependencies",
+        "skipWhenPrettierIsNotProjectDependencies": {
+          "title": "Skip When Prettier Is Not Project Dependencies",
           "order": 2,
+          "type": "boolean",
+          "default": false
+        },
+        "skipWhenPrettierConfigIsNotFound": {
+          "title": "Skip When Prettier Config Is Not Found",
+          "order": 3,
           "type": "boolean",
           "default": false
         },
         "disabledParsers": {
           "title": "Disabled Parsers",
-          "order": 3,
+          "order": 4,
           "description": "Put parser names here e.g. `markdown, postcss`",
           "type": "array",
           "default": [],
