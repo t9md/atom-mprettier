@@ -1,3 +1,6 @@
+# 0.6.0:
+- Breaking: move `javascriptParser` config to `scopesForParser.javascriptParser`.
+
 # 0.5.1:
 - Minor change: Make collapsed config options default uncollapsed.
 
