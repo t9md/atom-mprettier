@@ -1,6 +1,8 @@
 # mprettier
 
-**M**inimalistic prettier for AtomEditor
+:warning: **Alpha status**: Might introduce breaking changes until I set this stable(or remove this warning).
+
+**M**inimalistic [prettier](https://github.com/prettier/prettier) runner for AtomEditor
 
 - Small overhead on Atom startup with less feature(E.g. no eslint integration for now)
 - You need configure prettier options directly in your `config.cson`, no fancy setting UI.
@@ -9,12 +11,6 @@
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
 
 ![img](https://raw.githubusercontent.com/t9md/t9md/321b0393309a3cfc653e3ee9627c162294b8e5cd/img/mprettier.png)
-
-## Development status
-
-Alpha.
-Might introduce breaking changes until I set this Stable(or remove this section).
-
 
 ## How to use?
 
