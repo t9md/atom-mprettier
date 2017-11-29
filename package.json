@@ -11,10 +11,33 @@
   },
   "configSchema": {
     "formatOnSave": {
-      "order": 0,
-      "description": "works only for **active** editor",
-      "type": "boolean",
-      "default": false
+      "type": "object",
+      "collapsed": false,
+      "properties": {
+        "enable": {
+          "title": "Enable",
+          "order": 0,
+          "description": "works only for **active** editor",
+          "type": "boolean",
+          "default": false
+        },
+        "onlyWhenPrettierIsProjectDependencies": {
+          "title": "Only When Prettier Is Project Dependencies",
+          "order": 7,
+          "type": "boolean",
+          "default": false
+        },
+        "disabledParsers": {
+          "title": "Disabled Parsers",
+          "order": 8,
+          "description": "Put parser names here e.g. `markdown, postcss`",
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     },
     "usePrettierInCurrentFileDirectory": {
       "order": 1,
@@ -45,29 +68,6 @@
       "order": 6,
       "type": "boolean",
       "default": true
-    },
-    "formatOnlyWhenPrettierIsProjectDependencies": {
-      "order": 7,
-      "type": "boolean",
-      "default": false
-    },
-    "disabledParsers": {
-      "order": 8,
-      "description": "Put parser names here e.g. `markdown, postcss`",
-      "type": "array",
-      "default": [],
-      "items": {
-        "type": "string"
-      }
-    },
-    "disabledParsersOnFormatOnSave": {
-      "order": 9,
-      "description": "Checked only when formatOnSave before checking `disabledParsers`",
-      "type": "array",
-      "default": [],
-      "items": {
-        "type": "string"
-      }
     },
     "javascriptParser": {
       "title": "JavaScript Parser",
