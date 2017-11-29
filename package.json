@@ -10,26 +10,45 @@
     "atom": "^1.15.0"
   },
   "configSchema": {
+    "javascriptParser": {
+      "title": "JavaScript Parser",
+      "order": 1,
+      "type": "string",
+      "default": "babylon",
+      "enum": ["babylon", "flow"]
+    },
+    "notificationMethodOnPrettierError": {
+      "order": 2,
+      "type": "string",
+      "default": "atom-notification",
+      "enum": ["atom-notification", "console"]
+    },
+    "debug": {
+      "order": 3,
+      "type": "boolean",
+      "default": false
+    },
     "formatOnSave": {
+      "order": 4,
       "type": "object",
-      "collapsed": false,
+      "collapsed": true,
       "properties": {
         "enable": {
           "title": "Enable",
-          "order": 0,
+          "order": 1,
           "description": "works only for **active** editor",
           "type": "boolean",
           "default": false
         },
         "onlyWhenPrettierIsProjectDependencies": {
           "title": "Only When Prettier Is Project Dependencies",
-          "order": 7,
+          "order": 2,
           "type": "boolean",
           "default": false
         },
         "disabledParsers": {
           "title": "Disabled Parsers",
-          "order": 8,
+          "order": 3,
           "description": "Put parser names here e.g. `markdown, postcss`",
           "type": "array",
           "default": [],
@@ -39,46 +58,53 @@
         }
       }
     },
-    "usePrettierInCurrentFileDirectory": {
-      "order": 1,
-      "type": "boolean",
-      "default": true
-    },
-    "usePrettierInCurrentProject": {
-      "order": 2,
-      "type": "boolean",
-      "default": true
-    },
-    "usePrettierInAbsolutePath": {
-      "order": 3,
-      "type": "boolean",
-      "default": false
-    },
-    "prettierInAbsolutePath": {
-      "order": 4,
-      "type": "string",
-      "default": "/usr/local/lib/node_modules/prettier/index.js"
-    },
-    "usePrettierGloballyInstalled": {
+    "prettierToUseInOrder": {
       "order": 5,
-      "type": "boolean",
-      "default": false
-    },
-    "usePrettierBundled": {
-      "order": 6,
-      "type": "boolean",
-      "default": true
-    },
-    "javascriptParser": {
-      "title": "JavaScript Parser",
-      "order": 10,
-      "type": "string",
-      "default": "babylon",
-      "enum": ["babylon", "flow"]
+      "type": "object",
+      "collapsed": true,
+      "properties": {
+        "inCurrentFileDirectory": {
+          "title": "1. In Current File Directory",
+          "order": 1,
+          "type": "boolean",
+          "default": false
+        },
+        "inCurrentProject": {
+          "title": "2. In Current Project",
+          "order": 2,
+          "type": "boolean",
+          "default": true
+        },
+        "inAbsolutePath": {
+          "title": "3. In Absolute Path",
+          "order": 3,
+          "type": "boolean",
+          "default": false
+        },
+        "prettierPath": {
+          "title": "Prettier Path",
+          "order": 4,
+          "type": "string",
+          "default": "/usr/local/lib/node_modules/prettier/index.js"
+        },
+        "globallyInstalled": {
+          "title": "4. Globally Installed",
+          "order": 5,
+          "type": "boolean",
+          "default": false
+        },
+        "bundled": {
+          "title": "5. Bundled in mprettier",
+          "order": 6,
+          "type": "boolean",
+          "default": true
+        }
+      }
     },
     "scopesForParser": {
+      "order": 6,
       "type": "object",
-      "collapsed": false,
+      "collapsed": true,
       "properties": {
         "javascript": {
           "order": 0,
@@ -151,17 +177,6 @@
           }
         }
       }
-    },
-    "notificationMethodOnPrettierError": {
-      "order": 11,
-      "type": "string",
-      "default": "atom-notification",
-      "enum": ["atom-notification", "console"]
-    },
-    "debug": {
-      "order": 12,
-      "type": "boolean",
-      "default": false
     }
   },
   "dependencies": {
