@@ -2,9 +2,9 @@
 
 **M**inimalistic prettier for AtomEditor
 
-- Super small overhead on Atom startup
-  - But no linter integration
+- Small overhead on Atom startup with less feature(E.g. no eslint integration for now)
 - You need configure prettier options directly in your `config.cson`, no fancy setting UI.
+- Trying to as explicit as possible for behavior/code/configuration parameters.
 
 If this package is not for you, use [prettier-atom](https://atom.io/packages/prettier-atom) which is basically **better** than this package.
 
