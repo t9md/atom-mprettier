@@ -1,6 +1,9 @@
 {
   "name": "mprettier",
   "main": "./lib/main",
+  "scripts": {
+    "lint": "standard lib/*.js spec/*.js"
+  },
   "version": "0.6.0",
   "description": "Minimalistic prettier runner for more performant Atom startup",
   "license": "MIT",
@@ -201,5 +204,8 @@
     "prettier": "^1.8.2",
     "read-pkg-up": "^3.0.0",
     "standard": "^10.0.3"
+  },
+  "standard": {
+    "globals": ["atom"]
   }
 }
