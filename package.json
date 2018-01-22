@@ -188,6 +188,7 @@
   "dependencies": {
     "fs-plus": "^3.0.1",
     "prettier": "^1.8.2",
-    "read-pkg-up": "^3.0.0"
+    "read-pkg-up": "^3.0.0",
+    "standard": "^10.0.3"
   }
 }
