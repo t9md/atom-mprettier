@@ -21,8 +21,13 @@
       "type": "boolean",
       "default": false
     },
-    "formatOnSave": {
+    "formatByStandardForJavascript": {
       "order": 2,
+      "type": "boolean",
+      "default": false
+    },
+    "formatOnSave": {
+      "order": 3,
       "type": "object",
       "collapsed": false,
       "properties": {
@@ -54,11 +59,17 @@
           "items": {
             "type": "string"
           }
+        },
+        "formatByStandardForJavascriptIfStandardIsProjectDependencies": {
+          "title": "Format By Standard For Javascript If Standard Is Project Dependencies",
+          "order": 4,
+          "type": "boolean",
+          "default": true
         }
       }
     },
     "prettierToUseInOrder": {
-      "order": 3,
+      "order": 4,
       "type": "object",
       "collapsed": false,
       "properties": {
@@ -101,7 +112,7 @@
       }
     },
     "scopesForParser": {
-      "order": 4,
+      "order": 5,
       "type": "object",
       "collapsed": false,
       "properties": {
